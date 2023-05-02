@@ -168,8 +168,8 @@ func TestSortSliceAsc(t *testing.T) {
 		{
 			name: "Sort slice asc",
 			args: args{[]int{-6, 12, -8, 0, 1, -6, 99}},
-			want: []int64{-8,-6,-6,0,1,12,99},
-		}
+			want: []int64{-8, -6, -6, 0, 1, 12, 99},
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {

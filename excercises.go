@@ -1,5 +1,7 @@
 package main
 
+import "errors"
+
 // Factorial .
 //
 // Implemente una función que calcule el factorial de un número
@@ -29,6 +31,10 @@ func FactorialRecursivo(n int64) int64 {
 //
 // Esta implementación debe hacerse con un loop
 func FactorialWithError(n int64) (int64, error) {
+	// rr := errors.New("este es un error")
+	if n < 0 {
+		return 0, errors.New("solo se soporta el calculo del factorial para números positivos")
+	}
 	panic("you should implement this function")
 }
 
@@ -49,8 +55,9 @@ func FactorialRecursiveWithError(n int64) (int64, error) {
 //
 // En este ejercicio ud debe implementar una función que reciba un slice  de enteros como argumento y devuelva uns lice con sus elementos
 // ordenados de menor a mayor
+// Busque y use el algoritmo de la burbuja
 //
-// Ejemplo  unordered = [8,1,0,2,8,9]  salida = [ 0,1,2,8,8,9]
+// Ejemplo  unordered = [8,1,0,2,8,9]  salida = [0,1,2,8,8,9]
 func SortSliceAsc(unordered []int) []int64 {
 	panic("you should implement this function")
 }
