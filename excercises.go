@@ -51,13 +51,18 @@ func FactorialRecursiveWithError(n int64) (int64, error) {
 	panic("you should implement this function")
 }
 
-// SortSliceAsc
+// SortSliceBubble
 //
 // En este ejercicio ud debe implementar una función que reciba un slice  de enteros como argumento y devuelva uns lice con sus elementos
 // ordenados de menor a mayor
 // Busque y use el algoritmo de la burbuja
 //
 // Ejemplo  unordered = [8,1,0,2,8,9]  salida = [0,1,2,8,8,9]
-func SortSliceAsc(unordered []int) []int64 {
+//
+// # Algoritmo de la burbuja
+//
+// El método de ordenamiento burbuja consiste en comparar cada elemento de la estructura con el siguiente e intercambiándolos
+// si corresponde. El proceso se repite hasta que la estructura esté ordenada.
+func SortSliceBubble(unordered []int) []int64 {
 	panic("you should implement this function")
 }

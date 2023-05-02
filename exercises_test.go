@@ -156,7 +156,7 @@ func TestFactorialRecursiveWithError(t *testing.T) {
 	}
 }
 
-func TestSortSliceAsc(t *testing.T) {
+func TestSortSliceBubble(t *testing.T) {
 	type args struct {
 		unordered []int
 	}
@@ -173,8 +173,8 @@ func TestSortSliceAsc(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := SortSliceAsc(tt.args.unordered); !reflect.DeepEqual(got, tt.want) {
-				t.Errorf("SortSliceAsc() = %v, want %v", got, tt.want)
+			if got := SortSliceBubble(tt.args.unordered); !reflect.DeepEqual(got, tt.want) {
+				t.Errorf("SortSliceBubble() = %v, want %v", got, tt.want)
 			}
 		})
 	}
