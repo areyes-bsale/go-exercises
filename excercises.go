@@ -25,6 +25,7 @@ func FactorialRecursivo(n int64) int64 {
 //
 // Si el argumento es menor a 0, devuelva 0 y un error indicando que solo se soportan números positivos.
 // Si el argumento es mayor a 10 devuelva 0 y un error indicando que solo se soporta el calculo del factorial hasta el número 10
+// Si la operación tiene éxito, devuelva el resultado y nil como el valor de error
 //
 // Esta implementación debe hacerse con un loop
 func FactorialWithError(n int64) (int64, error) {
@@ -37,6 +38,7 @@ func FactorialWithError(n int64) (int64, error) {
 //
 // Si el argumento es menor a 0, devuelva 0 y un error indicando que solo se soportan números positivos.
 // Si el argumento es mayor a 10 devuelva 0 y un error indicando que solo se soporta el calculo del factorial hasta el número 10
+// Si la operación tiene éxito, devuelva el resultado y nil como el valor de error
 //
 // Esta implementación debe hacerse con un loop
 func FactorialRecursiveWithError(n int64) (int64, error) {
