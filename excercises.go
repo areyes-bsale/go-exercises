@@ -44,3 +44,13 @@ func FactorialWithError(n int64) (int64, error) {
 func FactorialRecursiveWithError(n int64) (int64, error) {
 	panic("you should implement this function")
 }
+
+// SortSliceAsc
+//
+// En este ejercicio ud debe implementar una función que reciba un slice  de enteros como argumento y devuelva uns lice con sus elementos
+// ordenados de menor a mayor
+//
+// Ejemplo  unordered = [8,1,0,2,8,9]  salida = [ 0,1,2,8,8,9]
+func SortSliceAsc(unordered []int) []int64 {
+	panic("you should implement this function")
+}

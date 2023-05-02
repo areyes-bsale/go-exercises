@@ -1,6 +1,7 @@
 package main
 
 import (
+	"reflect"
 	"testing"
 )
 
@@ -150,6 +151,30 @@ func TestFactorialRecursiveWithError(t *testing.T) {
 			}
 			if got != tt.want {
 				t.Errorf("FactorialRecursiveWithError() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}
+
+func TestSortSliceAsc(t *testing.T) {
+	type args struct {
+		unordered []int
+	}
+	tests := []struct {
+		name string
+		args args
+		want []int64
+	}{
+		{
+			name: "Sort slice asc",
+			args: args{[]int{-6, 12, -8, 0, 1, -6, 99}},
+			want: []int64{-8,-6,-6,0,1,12,99},
+		}
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := SortSliceAsc(tt.args.unordered); !reflect.DeepEqual(got, tt.want) {
+				t.Errorf("SortSliceAsc() = %v, want %v", got, tt.want)
 			}
 		})
 	}
